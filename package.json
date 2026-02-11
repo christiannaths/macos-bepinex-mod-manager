@@ -1,0 +1,19 @@
+{
+  "name": "valheim-mod-manager",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "start": "bun src/index.tsx",
+    "dev": "bun --watch src/index.tsx"
+  },
+  "dependencies": {
+    "ink": "^6.0.0",
+    "ink-text-input": "^6.0.0",
+    "react": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "react-devtools-core": "^7.0.1",
+    "typescript": "^5.7.0"
+  }
+}
