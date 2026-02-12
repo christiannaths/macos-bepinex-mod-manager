@@ -11,26 +11,34 @@ A terminal UI for managing Valheim BepInEx mods on macOS. Search Thunderstore, i
 - [x] Install mods directly from search results
 - [x] View installed mods with version info (parsed from BepInEx logs)
 - [x] Enable / disable mods (renames `.dll` <-> `.dll.disabled`)
-- [ ] Cross-platform binaries
+- [x] Downloadable binary for easy install
 - [ ] Uninstall mods
-- [ ] Manage mod dependencies
+- [ ] View and manage mod dependencies
 - [ ] **⚠️ Support for other games**
 - [ ] Configurable game directory
 - [ ] Auto-install BepInEx
+- [ ] Homebrew package for improved installation management
 
 ## Install
 
 **Prerequisites:**
 
-- [Bun](https://bun.sh) runtime
+- macOS (Apple Silicon or Intel)
 - [BepInEx 5](https://github.com/BepInEx/BepInEx/releases) installed in your Valheim directory (see [gib](https://github.com/toebeann/gib) for an automated installer)
 - Valheim installed via Steam
 
+Download the latest `bpmacmods-darwin-universal.zip` from [Releases](https://github.com/christiannaths/macos-bepinex-mod-manager/releases), unzip, and run:
+
 ```bash
-git clone https://github.com/christiannaths/install-bipinex-mac.git
-cd install-bipinex-mac
-bun install
-bun start
+unzip bpmacmods-darwin-universal.zip
+./bpmacmods-darwin-universal
+```
+
+Optionally, move it somewhere on your `$PATH` for easy access:
+
+```bash
+mv bpmacmods-darwin-universal /usr/local/bin/bpmacmods
+bpmacmods
 ```
 
 ## Contribute
